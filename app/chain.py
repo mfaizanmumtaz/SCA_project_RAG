@@ -16,6 +16,13 @@ from langchain.schema.runnable import (
     RunnableParallel,
     RunnablePassthrough,
 )
+import os
+
+os.environ["GOOGLE_API_KEY"] = "AIzaSyCoqBakUtcaayyOfU26fd-AODycWpeAp3M"
+os.environ["PINECONE_API_KEY"] = "d6353e03-3383-4dbc-8eac-005b8e4111bd"
+os.environ["PINECONE_ENVIRONMENT"] = "northamerica-northeast1-gcp"
+
+os.environ["OPENAI_API_KEY"] = "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"
 
 PINECONE_INDEX_NAME = "sca-project-rag"
 
